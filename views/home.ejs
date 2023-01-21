@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS</title>
+</head>
+
+<body>
+    <h1>EJS Example Using Node js...................</h1>
+    <p>X values is <%= k1 %>
+    </p>
+    <p>
+        <%= name %>
+    </p>
+    <p>
+        <%= fname %>
+    </p>
+    <p>
+        <%= location %>
+    </p>
+    <p>Hoppies:<% hobbies%>
+    </p>
+
+    <ol>
+        <% hobbies.forEach((hobbi)=>{ %>
+            <li>
+                <%= hobbi %>
+            </li>
+            <% }) %>
+
+    </ol>
+
+    
+    <ul>
+        <li>Fruits Name:-<%= fruits%>
+        </li>
+    </ul>
+
+    <table style="width: 200px; border: 1px solid red;">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <%= user.id %>
+                </td>
+                <td>
+                    <%= user.name %>
+                </td>
+                <td>
+                    <%= user.age %>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
